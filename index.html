@@ -1,0 +1,497 @@
+<!doctype html>
+<html class="no-js " lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>:: Nshift- Carrrier Editor ::</title>
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- vendor css files -->
+    <link rel="stylesheet" href="assets/js/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/animsition.min.css">
+    <link rel="stylesheet" href="assets/js/vendor/morris/morris.css">
+    <!-- project main css files -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body id="Nshift" class="main_Wrapper">
+    <div id="wrap" class="animsition">
+        <!-- HEADER Content -->
+        <div id="header">
+            <header class="clearfix">
+                <!-- Branding -->
+                <div class="branding">
+                    <a class="brand" href="index.html">
+                        <span>Carrier Editor</span>
+                    </a>
+                    <a role="button" tabindex="0" class="offcanvas-toggle visible-xs-inline">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <!-- Branding end -->
+
+                <!-- Left-side navigation -->
+                <ul class="nav-left pull-left list-unstyled list-inline">
+                    <li class="leftmenu-collapse">
+                        <a role="button" tabindex="0" class="collapse-leftmenu">
+                            <i class="fa fa-outdent"></i>
+                        </a>
+                    </li>
+               
+              
+                </ul>
+                <!-- Left-side navigation end -->
+                <div class="search" id="main-search">
+                    <input type="text" class="form-control underline-input" placeholder="Search Carriers...">
+                </div>
+                <!-- Search end -->
+
+                <!-- Right-side navigation -->
+                <ul class="nav-right pull-right list-inline">
+                
+               
+                
+                    <li class="dropdown nav-profile">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/images/profile-photo.jpg" alt="" class="0 size-30x30"> </a>
+                        <ul class="dropdown-menu pull-right" role="menu">
+                            <li>
+                                <div class="user-info">
+                                    <div class="user-name">gandalf</div>
+                                    <div class="user-position online">Available</div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="profile.html" role="button" tabindex="0">
+                                    <span class="label label-success pull-right">80%</span>
+                                    <i class="fa fa-user"></i>Profile</a>
+                            </li>
+                            <li>
+                                <a role="button" tabindex="0">
+                                    <span class="label label-info pull-right">new</span>
+                                    <i class="fa fa-check"></i>Tasks</a>
+                            </li>
+                            <li>
+                                <a role="button" tabindex="0">
+                                    <i class="fa fa-cog"></i>Settings</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="locked.html" role="button" tabindex="0">
+                                    <i class="fa fa-lock"></i>Lock</a>
+                            </li>
+                            <li>
+                                <a href="login.html" role="button" tabindex="0">
+                                    <i class="fa fa-sign-out"></i>Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="toggle-right-leftmenu">
+                        <a role="button" tabindex="0">
+                            <i class="fa fa-align-left"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Right-side navigation end -->
+            </header>
+        </div>
+        <!--/ HEADER Content  -->
+        <div id="controls">
+            <aside id="leftmenu">
+                <div id="leftmenu-wrap">
+                  <div class="panel-group slim-scroll" role="tablist">
+                    <div class="panel panel-default">
+                      <div id="leftmenuNav" class="panel-collapse collapse in" role="tabpanel">
+                        <div class="panel-body">
+                          <!--  NAVIGATION Content -->
+                          <ul id="navigation">
+                            <li class="active open">
+                              <a href="index.html">
+                                <i class="fa fa-truck"></i>
+                                <span>Carriers</span>
+                              </a>
+                            
+                            </li>
+                          </ul>
+                          <!--/ NAVIGATION Content -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel settings panel-default">
+                      <div class="panel-heading" role="tab">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" href="#leftmenuControls">General Settings <i class="fa fa-angle-up"></i>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="leftmenuControls" class="panel-collapse collapse in" role="tabpanel">
+                        <div class="panel-body">
+                          <div class="form-group">
+                            <div class="row">
+                              <label class="col-xs-8">Switch ON</label>
+                              <div class="col-xs-4 control-label">
+                                <div class="togglebutton">
+                                  <label>
+                                    <input type="checkbox" checked="">
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="row">
+                              <label class="col-xs-8">Switch OFF</label>
+                              <div class="col-xs-4 control-label">
+                                <div class="togglebutton">
+                                  <label>
+                                    <input type="checkbox">
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="milestone-sidbar">
+                        <div class="text-center-folded">
+                          <span class="pull-right pull-none-folded">60%</span>
+                          <span class="hidden-folded">Milestone</span>
+                        </div>
+                        <div class="progress progress-xxs m-t-sm dk">
+                          <div class="progress-bar progress-bar-info" style="width: 60%;"></div>
+                        </div>
+                        <div class="text-center-folded">
+                          <span class="pull-right pull-none-folded">35%</span>
+                          <span class="hidden-folded">Sprint 261 </span>
+                        </div>
+                        <div class="progress progress-xxs m-t-sm dk">
+                          <div class="progress-bar progress-bar-primary" style="width: 35%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+            <aside id="rightmenu">
+                <div role="tabpanel">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                       
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="chat">
+                            <div class="search">
+                                <div class="form-group is-empty">
+                                    <input type="text" class="form-control underline-input" placeholder="Something">
+                                    <span class="material-input"></span>
+                                </div>
+                            </div>
+                           
+                      
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="todo">
+                            <div class="form-group">
+                                <input type="text" value="" placeholder="Create new task..." class="form-control" />
+                                <span class="fa fa-plus"></span>
+                            </div>
+                            <h6>Today</h6>
+                            <ul class="todo-list">
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="optionsCheckboxes"> Initialize the
+                                            project</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="optionsCheckboxes"> Create the main
+                                            structure</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="optionsCheckboxes"> Create the main
+                                            structure</label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <h6>Tomorrow</h6>
+                            <ul class="todo-list">
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="optionsCheckboxes"> Initialize the
+                                            project</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="optionsCheckboxes"> Create the main
+                                            structure</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="optionsCheckboxes"> displayed in a normal
+                                            space!</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="settings">
+                            <h6>Chat Settings</h6>
+                            <ul class="settings">
+                                <li>
+                                    <div class="form-group">
+                                        <label class="col-xs-8 control-label">Show Offline Users</label>
+                                        <div class="col-xs-4 control-label text-right">
+                                            <div class="togglebutton">
+                                                <label>
+                                                    <input type="checkbox" checked="">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="col-xs-8 control-label">Show Fullname</label>
+                                        <div class="col-xs-4 control-label text-right">
+                                            <div class="togglebutton">
+                                                <label>
+                                                    <input type="checkbox">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="col-xs-8 control-label">History Enable</label>
+                                        <div class="col-xs-4 control-label text-right">
+                                            <div class="togglebutton">
+                                                <label>
+                                                    <input type="checkbox" checked="">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="col-xs-8 control-label">Show Locations</label>
+                                        <div class="col-xs-4 control-label text-right">
+                                            <div class="togglebutton">
+                                                <label>
+                                                    <input type="checkbox" checked="">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="col-xs-8 control-label">Notifications</label>
+                                        <div class="col-xs-4 control-label text-right">
+                                            <div class="togglebutton">
+                                                <label>
+                                                    <input type="checkbox">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-group">
+                                        <label class="col-xs-8 control-label">Show Undread Count</label>
+                                        <div class="col-xs-4 control-label text-right">
+                                            <div class="togglebutton">
+                                                <label>
+                                                    <input type="checkbox">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <!-- CONTENT -->
+        <section id="content">
+            <div class="page dashboard-page">
+                <!-- bradcome -->
+                <div class="b-b mb-20">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <h1 class="h3 m-0">Carriers</h1>
+                            <small class="text-muted">Welcome to Nshift Carrier Editor</small>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row clearfix">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <input type="text" value="" placeholder="Search Carrier" class="form-control" />
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+
+                <div class="row clearfix">
+
+                    <div  onclick="location.href='carrier.html';"  class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="boxs project_widget">
+                            <div class="pw_img">
+                                <img id="carrierLogos" class="img-responsive" src="assets/images/dhl.png" alt="About the image">
+                            </div>
+                            <div class="pw_content">
+                                <div id="carrierHeader" class="pw_header">
+                                    <h6>DHL DK</h6>
+                                    <small class="text-muted">Total issues 44 | Last Update: 17 Dec 2022</small>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="boxs project_widget">
+                            <div class="pw_img">
+                                <img id="carrierLogos" class="img-responsive" src="assets/images/db-schenker-air-logo.jpg" alt="About the image">
+                            </div>
+                            <div class="pw_content">
+                                <div id="carrierHeader" class="pw_header">
+                                    <h6 >Schenker DE</h6>
+                                    <small class="text-muted">Total issues 44 | Last Update: 17 Dec 2022</small>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="boxs project_widget">
+                            <div class="pw_img">
+                                <img id="carrierLogos" class="img-responsive" src="assets/images/dsv-road-gb-logo.jpg" alt="About the image">
+                            </div>
+                            <div class="pw_content">
+                                <div  id="carrierHeader" class="pw_header">
+                                    <h6>DSV</h6>
+                                    <small class="text-muted">Total issues 44 | Last Update: 17 Dec 2022</small>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="boxs project_widget">
+                            <div class="pw_img">
+                                <img id="carrierLogos" class="img-responsive" src="assets/images/freja-transport-_-logistics-dk-logo.png" alt="About the image">
+                            </div>
+                            <div class="pw_content">
+                                <div id="carrierHeader" class="pw_header">
+                                    <h6>Freja DK</h6>
+                                    <small class="text-muted">Total issues 44 | Last Update: 17 Dec 2022</small>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   <div class="row clearfix">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="boxs project_widget">
+                            <div class="pw_img">
+                                <img id="carrierLogos" class="img-responsive" src="assets/images/bring-parcels-logo.jpg" alt="About the image">
+                            </div>
+                            <div class="pw_content">
+                                <div id="carrierHeader"  class="pw_header">
+                                    <h6>Bring SE</h6>
+                                    <small class="text-muted">Total issues 44 | Last Update: 17 Dec 2022</small>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="boxs project_widget">
+                            <div class="pw_img">
+                                <img id="carrierLogos" class="img-responsive" src="assets/images/postnord-finland-logo.jpg" alt="About the image">
+                            </div>
+                            <div class="pw_content">
+                                <div  id="carrierHeader" class="pw_header">
+                                    <h6>Postnord NO</h6>
+                                    <small class="text-muted">Total issues 44 | Last Update: 17 Dec 2022</small>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="boxs project_widget">
+                            <div class="pw_img">
+                                <img id="carrierLogos" class="img-responsive" src="assets/images/porterbuddy.jpg" alt="About the image">
+                            </div>
+                            <div class="pw_content">
+                                <div id="carrierHeader" class="pw_header">
+                                    <h6>Porterbuddy NO</h6>
+                                    <small class="text-muted">Total issues 44 | Last Update: 17 Dec 2022</small>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="boxs project_widget">
+                            <div class="pw_img">
+                                <img id="carrierLogos" class="img-responsive" src="assets/images/dhl.png" alt="About the image">
+                            </div>
+                            <div class="pw_content">
+                                <div id="carrierHeader" class="pw_header">
+                                    <h6>DHL SE</h6>
+                                    <small class="text-muted">Total issues 44 | Last Update: 17 Dec 2022</small>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                
+          
+            </div>
+        </section>
+    </div>
+    <!-- Vendor JavaScripts -->
+    <script src="assets/bundles/libscripts.bundle.js"></script>
+    <script src="assets/bundles/vendorscripts.bundle.js"></script>
+
+    <!--/ vendor javascripts -->
+    <script src="assets/bundles/flotscripts.bundle.js"></script>
+    <script src="assets/bundles/d3cripts.bundle.js"></script>
+    <script src="assets/bundles/sparkline.bundle.js"></script>
+    <script src="assets/bundles/raphael.bundle.js"></script>
+    <script src="assets/bundles/morris.bundle.js"></script>
+    <script src="assets/bundles/loadercripts.bundle.js"></script>
+
+    <!-- page Js -->
+    <script src="assets/bundles/mainscripts.bundle.js"></script>
+    <script src="assets/js/page/index.js"></script>
+</body>
+
+</html>

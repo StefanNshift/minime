@@ -1,0 +1,731 @@
+<!doctype html>
+<html class="no-js " lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>:: Nshift- Carrrier Editor ::</title>
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/js/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/animsition.min.css">
+    <link rel="stylesheet" href="assets/js/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/vendor/simple-line-icons.css">
+    <link rel="stylesheet" href="assets/css/vendor/weather-icons.min.css">
+  </head>
+  <body id="Nshift" class="main_Wrapper">
+    <!--Application Content -->
+    <div id="wrap" class="animsition">
+      <!--  HEADER Content -->
+      <div id="header">
+        <header class="clearfix">
+          <!-- Branding -->
+          <div class="branding">
+            <a class="brand" href="index.html">
+              <span>Carrier Editor</span>
+            </a>
+            <a role="button" tabindex="0" class="offcanvas-toggle visible-xs-inline">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+          <!-- Branding end -->
+          <!-- Left-side navigation -->
+          <ul class="nav-left pull-left list-unstyled list-inline">
+            <li class="leftmenu-collapse">
+              <a role="button" tabindex="0" class="collapse-leftmenu">
+                <i class="fa fa-outdent"></i>
+              </a>
+            </li>
+           
+          
+          </ul>
+          <!-- Left-side navigation end -->
+          <div class="search" id="main-search">
+            <input type="text" class="form-control underline-input" placeholder="Search Carriers...">
+          </div>
+          <!-- Search end -->
+          <!-- Right-side navigation -->
+          <ul class="nav-right pull-right list-inline">
+         
+        
+            <li class="dropdown nav-profile">
+              <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="assets/images/profile-photo.jpg" alt="" class="0 size-30x30">
+              </a>
+              <ul class="dropdown-menu pull-right" role="menu">
+                <li>
+                  <div class="user-info">
+                    <div class="user-name">Gandalf</div>
+                    <div class="user-position online">Available</div>
+                  </div>
+                </li>
+                <li>
+                  <a href="carrier.html" role="button" tabindex="0">
+                    <span class="label label-success pull-right">80%</span>
+                    <i class="fa fa-user"></i>carrier </a>
+                </li>
+                <li>
+                  <a role="button" tabindex="0">
+                    <span class="label label-info pull-right">new</span>
+                    <i class="fa fa-check"></i>Tasks </a>
+                </li>
+                <li>
+                  <a role="button" tabindex="0">
+                    <i class="fa fa-cog"></i>Settings </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="locked.html" role="button" tabindex="0">
+                    <i class="fa fa-lock"></i>Lock </a>
+                </li>
+                <li>
+                  <a href="login.html" role="button" tabindex="0">
+                    <i class="fa fa-sign-out"></i>Logout </a>
+                </li>
+              </ul>
+            </li>
+            <li class="toggle-right-leftmenu">
+              <a role="button" tabindex="0">
+                <i class="fa fa-align-left"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- Right-side navigation end -->
+        </header>
+      </div>
+      <!--/ HEADER Content  -->
+      <!--  CONTROLS Content  -->
+      <div id="controls">
+        <!--SIDEBAR Content -->
+        <aside id="leftmenu">
+          <div id="leftmenu-wrap">
+            <div class="panel-group slim-scroll" role="tablist">
+              <div class="panel panel-default">
+                <div id="leftmenuNav" class="panel-collapse collapse in" role="tabpanel">
+                  <div class="panel-body">
+                    <!--  NAVIGATION Content -->
+                    <ul id="navigation">
+                      <li class="active open">
+                        <a href="index.html">
+                          <i class="fa fa-truck"></i>
+                          <span>Carriers</span>
+                        </a>
+                      
+                      </li>
+                    </ul>
+                    <!--/ NAVIGATION Content -->
+                  </div>
+                </div>
+              </div>
+              <div class="panel settings panel-default">
+                <div class="panel-heading" role="tab">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" href="#leftmenuControls">General Settings <i class="fa fa-angle-up"></i>
+                    </a>
+                  </h4>
+                </div>
+                <div id="leftmenuControls" class="panel-collapse collapse in" role="tabpanel">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <div class="row">
+                        <label class="col-xs-8">Switch ON</label>
+                        <div class="col-xs-4 control-label">
+                          <div class="togglebutton">
+                            <label>
+                              <input type="checkbox" checked="">
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="row">
+                        <label class="col-xs-8">Switch OFF</label>
+                        <div class="col-xs-4 control-label">
+                          <div class="togglebutton">
+                            <label>
+                              <input type="checkbox">
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="milestone-sidbar">
+                  <div class="text-center-folded">
+                    <span class="pull-right pull-none-folded">60%</span>
+                    <span class="hidden-folded">Milestone</span>
+                  </div>
+                  <div class="progress progress-xxs m-t-sm dk">
+                    <div class="progress-bar progress-bar-info" style="width: 60%;"></div>
+                  </div>
+                  <div class="text-center-folded">
+                    <span class="pull-right pull-none-folded">35%</span>
+                    <span class="hidden-folded">Sprint 261 </span>
+                  </div>
+                  <div class="progress progress-xxs m-t-sm dk">
+                    <div class="progress-bar progress-bar-primary" style="width: 35%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <!--/ SIDEBAR Content -->
+        <!--RIGHTBAR Content -->
+        <aside id="rightmenu">
+          <div role="tabpanel">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                 
+              </ul>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active" id="chat">
+                      <div class="search">
+                          <div class="form-group is-empty">
+                              <input type="text" class="form-control underline-input" placeholder="Something">
+                              <span class="material-input"></span>
+                          </div>
+                      </div>
+                     
+                
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="todo">
+                      <div class="form-group">
+                          <input type="text" value="" placeholder="Create new task..." class="form-control" />
+                          <span class="fa fa-plus"></span>
+                      </div>
+                      <h6>Today</h6>
+                      <ul class="todo-list">
+                          <li>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="optionsCheckboxes"> Initialize the
+                                      project</label>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="optionsCheckboxes"> Create the main
+                                      structure</label>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="optionsCheckboxes"> Create the main
+                                      structure</label>
+                              </div>
+                          </li>
+                      </ul>
+                      <h6>Tomorrow</h6>
+                      <ul class="todo-list">
+                          <li>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="optionsCheckboxes"> Initialize the
+                                      project</label>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="optionsCheckboxes"> Create the main
+                                      structure</label>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="checkbox">
+                                  <label>
+                                      <input type="checkbox" name="optionsCheckboxes"> displayed in a normal
+                                      space!</label>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div role="tabpanel" class="tab-pane" id="settings">
+                      <h6>Chat Settings</h6>
+                      <ul class="settings">
+                          <li>
+                              <div class="form-group">
+                                  <label class="col-xs-8 control-label">Show Offline Users</label>
+                                  <div class="col-xs-4 control-label text-right">
+                                      <div class="togglebutton">
+                                          <label>
+                                              <input type="checkbox" checked="">
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="form-group">
+                                  <label class="col-xs-8 control-label">Show Fullname</label>
+                                  <div class="col-xs-4 control-label text-right">
+                                      <div class="togglebutton">
+                                          <label>
+                                              <input type="checkbox">
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="form-group">
+                                  <label class="col-xs-8 control-label">History Enable</label>
+                                  <div class="col-xs-4 control-label text-right">
+                                      <div class="togglebutton">
+                                          <label>
+                                              <input type="checkbox" checked="">
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="form-group">
+                                  <label class="col-xs-8 control-label">Show Locations</label>
+                                  <div class="col-xs-4 control-label text-right">
+                                      <div class="togglebutton">
+                                          <label>
+                                              <input type="checkbox" checked="">
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="form-group">
+                                  <label class="col-xs-8 control-label">Notifications</label>
+                                  <div class="col-xs-4 control-label text-right">
+                                      <div class="togglebutton">
+                                          <label>
+                                              <input type="checkbox">
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                          <li>
+                              <div class="form-group">
+                                  <label class="col-xs-8 control-label">Show Undread Count</label>
+                                  <div class="col-xs-4 control-label text-right">
+                                      <div class="togglebutton">
+                                          <label>
+                                              <input type="checkbox">
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </aside>
+        <!--/ RIGHTBAR Content -->
+      </div>
+      <!--/ CONTROLS Content -->
+      <!--CONTENT  -->
+      <section id="content">
+        <div class="page carrier-page">
+          <!-- page content -->
+          <div class="pagecontent">
+            <!-- row -->
+            <div class="row">
+              <div class="col-md-12">
+                <section class="boxs">
+                  <div class="carrier-header">
+                    <div class="carrier_info">
+                      <div class="carrier-image">
+                        <img src="assets/images/dhl.png" alt="">
+                      </div>
+                      <h4 class="mb-0">
+                        <strong>DHL DK (Concept ID 132) </strong>
+                      </h4>
+                      <span class="text-muted">Some information about the subcarrier</span>
+                    
+                    </div>
+                  </div>
+              
+                </section>
+              </div>
+              <div class="page email-page tbox tbox-sm">
+                <div class="row">
+                  <div class="col-md-3">
+                    <section class="boxs">
+                      <div class="tcol">
+                        <!-- left side -->
+                        <div class="p-15 bg-white" style="min-height: 61px">
+                          <a class="btn btn-raised btn-primary btn-sm">Download XML</a>
+                          <button class="btn btn-sm btn-info pull-right visible-sm visible-xs" data-toggle="collapse" data-target="#mail-nav" aria-expanded="false">
+                            <i class="fa fa-bars"></i>
+                          </button>
+                          <a class="btn btn-raised btn-primary btn-sm">Create Jira</a>
+                          <button class="btn btn-sm btn-default pull-right visible-sm visible-xs" data-toggle="collapse" data-target="#mail-nav" aria-expanded="false">
+                            <i class="fa fa-bars"></i>
+                          </button>
+                        </div>
+                        
+                        <div class="b-b mb-10"></div>
+                        <div class="p-15 collapse collapse-xs collapse-sm" id="mail-nav">
+                          <ul class="nav nav-pills nav-stacked nav-sm" id="mail-folders">
+                            <li >
+                              <a href="carrier.html" title="Inbox">Carriers <span class="pull-right badge bg-lightred">6</span>
+                              </a>
+                            </li>
+                            <li class="active">
+                              <a title="Inbox">Subcarrier <span class="pull-right badge bg-lightred">3</span>
+                              </a>
+                            </li>
+                            <div class="underlinks">
+                              <li>
+                                <a href="javascript:;">
+                                  <i class="fa fa-fw fa-circle text-default" title="Off Line"></i>DHL Sea Freight (35) </a>
+                              </li>
+                              <li style="background: #4055d9;">
+                                <a style="color:white" href="javascript:;">
+                                  <i class="fa fa-fw fa-circle text-default" title="Off Line"></i>DHL Air Freight (34) </a>
+                              </li>
+                              <li>
+                                <a href="javascript:;">
+                                  <i class="fa fa-fw fa-circle text-default" title="Off Line"></i>DHL Land Freight (37) </a>
+                              </li>
+                            </div>
+                            </li>
+                           
+                         
+                          </ul>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-md-9">
+                    <section class="boxs">
+                      <div class="boxs-header">
+                        <h3 class="custom-font hb-blue">
+                          <strong>DHL Air Freight</strong> Concept ID 34
+                        </h3>
+                      </div>
+                      <div class="b-b mb-10"></div>
+                      <div class="boxs-body">
+                        <div id="b_rootwizard">
+                        
+                          <div class="navbar">
+                            <div class="navbar-inner">
+                              <ul class="nav nav-pills">
+                                <li class="active">
+                                  <a href="#btab1" data-toggle="tab">Services</a>
+                                </li>
+                                <li class="">
+                                  <a href="#btab2" data-toggle="tab">Addons</a>
+                                </li>
+                                <li class="">
+                                  <a href="#btab3" data-toggle="tab">Goodstypes</a>
+                                </li>
+                                <li class="">
+                                    <a href="#btab3" data-toggle="tab">Validations</a>
+                                  </li>
+                         
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="btab1">
+                              <div class="boxs-widget">
+                                <div class="row">
+                                  <div class="col-sm-2 col-xs-6">
+                                    <select class="form-control inline">
+                                      <option value="0">Bulk action</option>
+                                      <option value="1">Delete selected</option>
+                                      <option value="2">Archive selected</option>
+                                      <option value="3">Copy selected</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-sm-6 col-xs-6">
+                                    <button style="margin-right: 5%" class="btn btn-default btn-raised">Apply</button>
+                                    <button class="btn btn-warning btn-raised">Reset</button>
+                                    <button class="btn btn-primary btn-raised"> Lock <i class="icon-lock"></i>
+                                    </button>
+                                  </div>
+                                  <div class="col-sm-1 col-xs-12"></div>
+                                </div>
+                              </div>
+                              <div class="boxs-body p-0">
+                                <div class="table-responsive">        
+                                <table class="table mb-0" id="usersList">
+										<thead>
+											<tr>
+												<th style="width:20px;">
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="optionsCheckboxes">
+														</label>
+													</div>
+												</th>
+												<th>Service Name</th>
+                                                <th>Concept ID</th>
+												<th>Label Code</th>
+												<th>EDI Code</th>
+                                                <th>COD</th>
+                                                <th>Insurance</th>
+                                                <th>Is Return</th>
+                                                <th>Dangerous Good</th>
+
+
+												<th style="width:30px;"></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<div class="checkbox" id="carrierCheckbox">
+														<label>
+															<input type="checkbox" name="optionsCheckboxes">
+														</label>
+													</div>
+												</td>
+												<td>Air First</td>
+												<td>196</td>
+												<td>E1</td>
+                                                <td>A2</td>
+                                                <td >
+                                                    <div class="togglebutton">
+                                                      <label>
+                                                        <input type="checkbox" checked="">
+                                                      </label>
+                                                    </div>
+                                                  </td>
+                                                  <td >
+                                                    <div class="togglebutton">
+                                                      <label>
+                                                        <input type="checkbox" checked="">
+                                                      </label>
+                                                    </div>
+                                                  </td>
+                                                  <td >
+                                                    <div class="togglebutton">
+                                                      <label>
+                                                        <input type="checkbox" checked="">
+                                                      </label>
+                                                    </div>
+                                                  </td>
+                                                  <td >
+                                                    <div class="togglebutton">
+                                                      <label>
+                                                        <input type="checkbox" checked="">
+                                                      </label>
+                                                    </div>
+                                                  </td>
+											</tr>
+											
+                                           
+										
+									
+										
+										
+										</tbody>
+									</table>
+                                  <button class="btn btn-raised btn-danger btn-sm">Remove Service</button>
+                                  <button class="btn btn-raised btn-primary btn-sm">Add Service</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="btab2">
+                                <div class="boxs-widget">
+                                    <div class="row">
+                                      <div class="col-sm-2 col-xs-6">
+                                        <select class="form-control inline">
+                                          <option value="0">Bulk action</option>
+                                          <option value="1">Delete selected</option>
+                                          <option value="2">Archive selected</option>
+                                          <option value="3">Copy selected</option>
+                                        </select>
+                                      </div>
+                                      <div class="col-sm-6 col-xs-6">
+                                        <button style="margin-right: 5%" class="btn btn-default btn-raised">Apply</button>
+                                        <button class="btn btn-warning btn-raised">Reset</button>
+                                        <button class="btn btn-primary btn-raised"> Lock <i class="icon-lock"></i>
+                                        </button>
+                                      </div>
+                                      <div class="col-sm-1 col-xs-12"></div>
+                                    </div>
+                                  </div>
+                                  <div class="boxs-body p-0">
+                                    <div class="table-responsive">        
+                                    <table class="table mb-0" id="usersList">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width:20px;">
+                                                        <div class="checkbox">
+                                                            <label>
+                                                                <input type="checkbox" name="optionsCheckboxes">
+                                                            </label>
+                                                        </div>
+                                                    </th>
+                                                    <th>Addon Name</th>
+                                                    <th>Concept ID</th>
+                                                    <th>Group</th>
+                                                    <th>EDI</th>
+                                                    <th>Label</th>
+                                                    <th>Air Force</th>
+                                                    <th>Air Force2</th>
+                                                    <th>Air Force3</th>
+
+    
+    
+                                                    <th style="width:30px;"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="checkbox" id="carrierCheckbox">
+                                                            <label>
+                                                                <input type="checkbox" name="optionsCheckboxes">
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>Air First</td>
+                                                    <td>196</td>
+                                                    <td>E1</td>
+                                                    <td>A2</td>
+                                                    <td >
+                                                        <div class="togglebutton">
+                                                          <label>
+                                                            <input type="checkbox" checked="">
+                                                          </label>
+                                                        </div>
+                                                      </td>
+                                                      <td >
+                                                        <div class="togglebutton">
+                                                          <label>
+                                                            <input type="checkbox" checked="">
+                                                          </label>
+                                                        </div>
+                                                      </td>
+                                                      <td >
+                                                        <div class="togglebutton">
+                                                          <label>
+                                                            <input type="checkbox" checked="">
+                                                          </label>
+                                                        </div>
+                                                      </td>
+                                                      <td >
+                                                        <div class="togglebutton">
+                                                          <label>
+                                                            <input type="checkbox" checked="">
+                                                          </label>
+                                                        </div>
+                                                      </td>
+                                                </tr>
+                                                
+                                               
+                                            
+                                        
+                                            
+                                            
+                                            </tbody>
+                                        </table>
+                                      <button class="btn btn-raised btn-danger btn-sm">Remove Service</button>
+                                      <button class="btn btn-raised btn-primary btn-sm">Add Service</button>
+                                    </div>
+                                  </div>
+                            
+                            </div>
+                            <div class="tab-pane" id="btab3">3. Lorem Ipsum is simply dummy text of the print typesetting industry. </div>
+                            <div class="tab-pane" id="btab4">4. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                            <div class="tab-pane" id="btab5">5. Lo simply dummy text of the printing and typesetting industry.</div>
+                            <div class="tab-pane" id="btab6">6. Lorem Ipsummmy text of the printing and typesetting industry.</div>
+                            <div class="tab-pane" id="btab7">7. Lorem Ipsum is simply dinting and typesetting industry.</div>
+                            <ul class="pager wizard">
+                              <li class="previous first disabled" style="display:none;">
+                                <a href="javascript:;">First</a>
+                              </li>
+                              <li class="previous disabled">
+                                <a href="javascript:;">Previous</a>
+                              </li>
+                              <li class="next last" style="display:none;">
+                                <a href="javascript:;">Last</a>
+                              </li>
+                              <li class="next">
+                                <a href="javascript:;">Next</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <!--/ CONTENT -->
+    </div>
+    <!--/ Application Content -->
+    <!--  Vendor JavaScripts  -->
+    <script src="assets/bundles/libscripts.bundle.js"></script>
+    <script src="assets/bundles/vendorscripts.bundle.js"></script>
+    <script src="assets/js/vendor/parsley/parsley.min.js"></script>
+    <script src="assets/js/vendor/form-wizard/jquery.bootstrap.wizard.min.js"></script>
+    <!--/ vendor javascripts -->
+    <!--  Custom JavaScripts  -->
+    <script src="assets/bundles/mainscripts.bundle.js"></script>
+    <!-- Custom Js -->
+    <!--/ custom javascripts -->
+    <!--  Page Specific Scripts  -->
+    <script>
+      $(document).ready(function() {
+        $('#b_rootwizard').bootstrapWizard({
+          onTabShow: function(tab, navigation, index) {
+            var $total = navigation.find('li').length;
+            var $current = index + 1;
+            var $percent = ($current / $total) * 100;
+            $('#b_rootwizard').find('.bar').css({
+              width: $percent + '%'
+            });
+          }
+        });
+      });
+      $(window).load(function() {
+        $('#rootwizard').bootstrapWizard({
+          onTabShow: function(tab, navigation, index) {
+            var $total = navigation.find('li').length;
+            var $current = index + 1;
+            // If it's the last tab then hide the last button and show the finish instead
+            if ($current >= $total) {
+              $('#rootwizard').find('.pager .next').hide();
+              $('#rootwizard').find('.pager .finish').show();
+              $('#rootwizard').find('.pager .finish').removeClass('disabled');
+            } else {
+              $('#rootwizard').find('.pager .next').show();
+              $('#rootwizard').find('.pager .finish').hide();
+            }
+          },
+          onNext: function(tab, navigation, index) {
+            var form = $('form[name="step' + index + '"]');
+            form.parsley().validate();
+            if (!form.parsley().isValid()) {
+              return false;
+            }
+          },
+          onTabClick: function(tab, navigation, index) {
+            var form = $('form[name="step' + (index + 1) + '"]');
+            form.parsley().validate();
+            if (!form.parsley().isValid()) {
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+    <!--/ Page Specific Scripts -->
+  </body>
+</html>

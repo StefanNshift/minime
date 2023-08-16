@@ -1,0 +1,26 @@
+{
+  "name": "Nshift",
+  "version": "1.0.0",
+  "description": "Nshift Admin App",
+  "main": "main.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "keywords": [
+    "SaSS",
+    "Test"
+  ],
+  "author": "Stefan Lidén",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "grunt": "^1.6.1",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-sass": "3.1.0",
+    "gruntfile": "^0.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0"
+  }
+}
